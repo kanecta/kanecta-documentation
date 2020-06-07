@@ -1,0 +1,52 @@
+= Kanecta Documentation
+:toc:
+:toc-placement: left
+:toclevels: 3
+:icons: font
+
+[WARNING]
+====
+.PROTECT YOUR DATA
+
+This project is very early stage. While the application is fully usable, there is every chance
+your data could be corrupted.
+
+By design all data is stored in *files* (there is no database), in a *single directory* on your machine.
+Also by design this directory is intended to be version controlled using https://git-scm.com/[Git].
+
+At a later stage we intend to build Git into the application, to allow version control to be carried out
+via the user interface.
+
+For the time being all users should be familiar with Git and be comfortable to manually version control the
+data directory themselves. As long as you do this your data should be completely safe as you can roll back
+to the last working version if you encounter problems.
+====
+
+== Quick start
+
+Ensure that you have the following prerequisites in place:
+
+* Node.js v10 or later installed on your machine.
+* Git installed on your machine.
+* This application has been tested on Ubuntu Linux. Use on other operating systems is at your own risk.
+
+The following instructions are for running on Ubuntu Linux 18.04:
+
+```
+git clone https://github.com/kanecta/kanecta-server-service-unified.git
+cd kanecta-server-service-unified
+npm install
+node kanecta.js
+```
+
+Open the user interface in your browser http://localhost:8000
+
+== Technology
+
+* Node.js v10
+* HTML v5
+* CSS v3
+
+== Docker
+
+Alternatively install using Docker: https://hub.docker.com/r/kanecta/kanecta
