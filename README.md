@@ -2,6 +2,6 @@
 
 ## Quick Start
 
-- Documentation is build using Asciidoctor. Asciidoctor must be installed to build docs.
-- To build `./build.sh`, output in `./dist` directory, index page is `index.html`.
-- To deploy `./deploy.sh`, output at https://kanecta.org/docs
+- Requires Linux/Bash with and [Asciidoctor](https://asciidoctor.org/) installed.
+- To build run the `./build.sh` script.  Output in `./dist` directory, index page is `index.html`.
+- To deploy run the `./deploy.sh` script.  Output at https://kanecta.org/docs
